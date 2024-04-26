@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body style="background-image:url(data:image/jpeg;base64,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);">
+  <h1>About Us</h1>
+  <div class="flex-row d-flex">
+    <div class=" divAboutUs"><br>
+     <style>
+      li{
+        text-align:center;
+      }
+      h1{
+        text-align: center;
+      }
+      p{
+         text-align: center;
+      }
+      img{
+        margin-left:42%;
+        border-radius:360px;
+      }
+      body{
+        background-color: aqua;
+      }
+    </style>
+    <header>
+      <img src="C:\Users\HP1\Desktop\MCO_APPDEV\ruths.jpg" width="200px" height="200px"/>
+      <h1>Ruth Ann B. Gaygay-ed</h1>
+      <p>Bachelor of Science In Computer Science</p>
+        <p>I consider my self a responsible and orderly person</p>
+  </header>
+  
+  <div class="Information">
+      <h1>Personal Information</h1>
+  
+      <li>Age:19</li>
+      <li>Sex:Female</li>
+      <li>Birthdate:June 07 2004</li>
+      <li>Address:Paoc Norte Santa Lucia Ilocos Sur</li>
+      <li>Contact:09927631020</li>
+      <li>Email:ruthanngaygayed@gmail.com</li>
+      <li>Civil Status:Single</li>
+      <li>Religion:Penticost</li>
+  </div>
+  
+  <div class="Education">
+      <h1>ELEMENTARY</h1>
+    <p>Paoc Norte Integrated School</p>
+     <h1>JUNIOR HIGH SCHOOL</h1>
+      <p>Nagtablaan National High School</p>
+      <h1>SENIOR HIGH SCHOOL</h1>
+      <p>Nicosat College</p>
+      <p>TVL-Information Communication and Technology</p>
+      <h1>COLLEGE</h1>
+      <p>ILOCOS SUR POLYTECHNIC STATE COLLEGE</p>
+      <p>Bachelor of Science in Computer Science</p>
+      </div>
+  <div class="job">
+      <h1>Dream <Job></Job></h1>
+      <p>Teacher</p>
+      <p>Nursing</p>
+      <p>programmer</p>
+  </div>
+    </div>
+    <div class="divAboutUs1">
+      <style>
+        body{
+    background-color: #555555;
+  }
+  *{
+   list-style: none;
+   padding:0;
+   margin:0;
+   text-decoration:none;
+   list-style:none;
+   box-sizing: border-box;
+}
+header{
+    font-family: sans-serif;
+    width:100%;
+      
+}
+main{
+    background-color:#555555 ;
+}
+.nav{
+    background:#303030;
+    height:80px;
+    width:100%;
+}
+.nav ul{
+    float:right;
+    margin-right: 20px;
+}
+.nav ul li {
+       display: inline-block;
+       line-height: 80px;
+       margin:0 5px;
+
+}
+.nav ul li a{
+    text-shadow: 0 2px 4px rgba(255, 0, 0, 0.897),
+    0 8px 16px rgba(255, 0, 0, 0.700);
+    color:white;
+    font-size:17px;
+    padding:7px 13px;
+    border-radius: 3px;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+a.active, a:hover {
+    background: #ff0000ec;
+    transition: .5s;
+}
+
+main{
+    text-align: center;
+    font-size: 1.5em;
+    padding-top:100px;
+   
+    width:100%;
+}
+#home{
+     padding-bottom:100px;
+}
+#home .text{
+    color:white;
+    vertical-align: sub;
+    height:4em;
+    overflow:hidden;
+    display:inline-block;
+    line-height:2em;
+    margin-left:-100px;
+    margin-top: 150px;
+    margin-right:0;
+}
+#home .imghome{
+    margin-top: 20px;
+    float:right;
+    border-radius: 1000px;
+    width:300px;
+    height:300px;
+    margin-left: 0;
+    top: 50px;
+    margin-right:100px;
+    padding:0;
+    border:15px outset #ff0000ec;
+    margin-bottom:0;
+    padding-bottom: 0; 
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.897),
+      0 8px 16px rgba(255, 0, 0, 0.700);
+}
+.imghome {
+    transition:transform .5s ;
+   
+}
+.imghome:hover{
+    transform:scale(1.2);
+}
+
+.name{
+   text-shadow: 0 2px 4px rgba(255, 0, 0, 0.897),
+   0 8px 16px rgba(255, 0, 0, 0.700);
+   color:white;
+   float: right;
+   margin:320px -280px 0 0;
+   font-family: sans-serif;
+   font-weight: bold;
+}
+#imghome .name{
+    position: relative;
+}
+.text ul {
+    font-family: sans-serif;
+    font-weight: bold;
+    animation:animation 5s ease-in-out;
+    margin-top:-0.55;
+    list-style:none;
+
+}
+@keyframes animation {
+    0%{ margin-top: -0.55em;}
+    12.5%{ margin-top: -2.54em;}
+    25%{ margin-top: -4.55em;}
+    37.5%{ margin-top: -6.55em;}
+    50%{ margin-top: -8.5em;}
+    62.5%{ margin-top: -6.55em;}
+    75%{ margin-top: -4.55em;}
+    87.5%{ margin-top: -2.54em;}
+    100%{ margin-top: -0.55em;}
+}
+#knowledge{
+   
+    margin:100px 300px 400px 300px;
+    position:relative;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 750px;
+    width: 100%;
+    
+}
+.stats{
+    width:100%;
+    background:#ddd;
+    margin:10px;
+}
+
+.html{width:0%; background-color:rgb(255, 60, 0);}
+.css{width:0%; background-color:rgb(0, 81, 255);}
+.js{width:0%; background-color:rgb(251, 255, 0);}
+.py{width:0%; background-color:rgb(0, 255, 98);}
+.html:hover{width:90%; background-color:rgb(255, 60, 0);}
+.css:hover{width:80%; background-color:rgb(0, 81, 255);}
+.js:hover{width:60%; background-color:rgb(251, 255, 0);}
+.py:hover{width:15%; background-color:rgb(0, 255, 98);}
+
+.intro{
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.897),
+    0 8px 16px rgba(255, 255, 255, 0.7);
+    color:#ff0000ec;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ff0000ec;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 100%;
+    text-align:left;
+}
+.personalinfo{
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.897),
+    0 8px 16px rgba(255, 255, 255, 0.7);
+    margin-top:250px;
+    color:#ff0000ec;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ff0000ec;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 100%;
+    text-align:left;
+}
+.educ{
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.897),
+    0 8px 16px rgba(255, 255, 255, 0.7);
+    margin-top:250px;
+    color:#ff0000ec;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ff0000ec;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 100%;
+    text-align:left;
+}
+
+
+ #knowledge .mystats{
+    position:relative;
+ }
+ #flexible{
+    box-sizing:border-box;
+    margin:50px 150px 200px 150px;;
+    position:relative;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.897),
+      0 8px 16px rgba(255, 0, 0, 0.700);
+    max-width: 750px;
+    width: 100%;
+    height:100%;
+ }
+ #teamwork{
+    box-sizing:border-box;
+    margin:50px 150px 200px 150px;
+    position:relative;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.897),
+    0 8px 16px rgba(255, 0, 0, 0.700);
+    max-width: 750px;
+    width: 100%;
+ }
+#hardworking{
+    box-sizing:border-box;
+    margin:50px 150px 200px 150px;
+    position:relative;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.897),
+    0 8px 16px rgba(255, 0, 0, 0.700);
+    max-width: 750px;
+    width: 100%;
+ }
+ .skills{
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.897),
+    0 8px 16px rgba(255, 255, 255, 0.7);
+    margin-top: 250px;
+    color:#ff0000ec;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #ff0000ec;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 100%;
+    text-align:left;
+ }
+ #flexible{
+    text-shadow:0 2px 4px rgba(255, 0, 0, 0.897),
+    0 8px 16px rgba(255, 0, 0, 0.700);
+    font-family: sans-serif;
+    font-weight: bold;
+    color:white;
+    
+ }
+ #teamwork{
+    text-shadow: 0 2px 4px rgba(255, 0, 0, 0.897),
+    0 8px 16px rgba(255, 0, 0, 0.700);
+    font-family: sans-serif;
+    font-weight: bold;
+    color:white;
+ }
+ #hardworking{
+    text-shadow: 0 2px 4px rgba(255, 0, 0, 0.897),
+    0 8px 16px rgba(255, 0, 0, 0.700);
+    font-family: sans-serif;
+    font-weight: bold;
+    color:white;
+ }
+ input[type='text'],input[type=émail]{
+    border:1px solid #ff0000ec;
+    width:150px;
+    padding:5px;
+    margin-bottom:5px;
+}
+textarea{
+    border: 1px solid #ff0000ec;
+    width:203px;
+    padding:5px;
+    margin-bottom:5px;
+}
+label{
+    font-weight:bold;
+    color: #ff0000ec;
+}
+input[type="submit"]{
+    background-color:#ff0000ec;
+    border:outset;
+    border-radius:7px;
+    padding:7px 15px;
+    font-weight:bold;
+    color:#eeeeee;
+    margin-bottom:7px;
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.897),
+    0 8px 16px rgba(255, 0, 0, 0.700);
+}
+input[type="submit"]:hover{
+    background-color:white;
+    border:inset;
+    border-radius:7px;
+    padding:7px 15px;
+    font-weight:bold;
+    color:#ff0000ec;
+    margin-bottom:7px;
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.897),
+    0 8px 16px rgba(255, 0, 0, 0.700);
+}
+#tittle{
+    text-shadow: 0 2px 4px rgba(255, 0, 0, 0.897),
+    0 8px 16px rgba(255, 0, 0, 0.700);
+    color:white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align:center;
+}
+section,footer{
+    padding: 2px 10px;
+}
+#links{
+    margin:0px;
+}
+footer{
+    background-color: #303030;
+}
+#links li b{
+    color:#ff0000ec;
+}
+#links li{
+    margin-bottom:5px;
+    list-style-type: disc;
+}
+footer a{
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.897),
+    0 8px 16px rgba(255, 255, 255, 0.7);
+    color:#ff0000ec;
+    text-decoration:none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+footer a:hover{
+    text-decoration:underline;
+}
+#contacts{
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.897),
+    0 8px 16px rgba(255, 255, 255, 0.7);
+    margin-top:250px;
+    color:#ff0000ec;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ff0000ec;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 100%;
+    text-align:left;
+ }
+
+
+#ACC{
+    text-shadow: 0 2px 4px rgba(255, 0, 0, 0.897),
+    0 8px 16px rgba(255, 0, 0, 0.700);
+    color:white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#hob{
+    width:100%;
+    height:100%;
+}
+
+
+
+#btn{
+    color:white;
+    font-style: italic;
+    font-family: sans-serif;
+    background-color:#ff0000ec;
+    text-decoration: none;
+    font-weight:bold;
+    animation-name:blackwhite;
+    animation-duration:3s;
+    animation-timing-function: ease-in;
+    animation-delay:1s;
+    animation-iteration-count:infinite;
+    animation-direction: reverse;
+}
+@keyframes blackwhite {
+    0%{
+        border: outset;
+        background-color:white;
+        color:#ff0000ec;
+        text-shadow: 0 2px 4px rgba(255, 0, 0, 0.897),
+        0 8px 16px rgba(255, 0, 0, 0.700);
+       
+    }
+    100%{
+        border: inset;
+        background-color: #ff0000ec;     
+        color:white;
+        text-shadow: 0 2px 4px rgba(255, 255, 255, 0.897),
+        0 8px 16px rgba(255, 255, 255, 0.7);
+        }
+}
+#pl{
+    text-shadow: 0 2px 4px rgba(255, 0, 0, 0.897),
+    0 8px 16px rgba(255, 0, 0, 0.700);
+    color:white;
+}
+    </style>
+    <header id="top">
+        
+       
+        <nav class="nav">
+          
+            <ul>
+                <li><a class="active"href="#home">HOME</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contacts">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <main > 
+      
+        <section href="#home" id="home">
+            <h2 class="intro"> 
+                      Home
+                  </h2>
+            <img src="C:\Users\HP1\Desktop\MCO_APPDEV\stephen.jpg" class="imghome" id="imghome" value="PLAY" onclick="play()">
+             <p class="name">Stephen Josh Peralta</p>
+            <div class="text" >
+                <ul>
+                   <li>Currently Studying at Ilocos Sur Polytecnic State College</li>
+                   <li>To work in a organization which provides me</li>
+                   <li>with ample opportunities to enhance my skills and knowledge</li>
+                   <li> along with contributing to the growth of the organization</li>
+                </ul>
+            </div>
+          
+        </section> 
+
+       <h2 class="educ" id="education">Educational Background</h2>
+            
+        <section id="education">
+            <p id="pl">Elementary School</p>
+                <div class="stats">
+                    <ul>
+                        <li>Burgos Central School <br>
+                        Poblation Norte Burgos Ilocos Sur <br>
+                                SY(2015-2016)</li>
+                    </ul>
+                </div>
+
+                <p id="pl">Junior High School</p>
+                <div class="stats">
+                   <ul>
+                    <li>Burgos National High School <br>
+                    Poblation Burgos Ilocos Sur <br>
+                             SY(2019-2020)  </li>
+                   </ul>
+                </div>
+
+                <p id="pl"> Senior High School</p>
+                <div class="stats">
+                    <ul>
+                        <li>Santa Maria National High School <br>
+                        Poblation Sur Sta Maria Ilocos Sur <br>
+                                SY(2020-2021)</li>
+                    </ul>
+                </div>
+
+                
+        </section>
+        
+
+        <h2 class="skills" id="skills">Skills</h2>
+            <section id="hob">
+                <h3 id="flexible">Flexible</h3>
+                <section id="Flexible">
+            
+                </section>
+
+                <H3 id="teamwork">Teamwork</H3>
+                <section id="Teamwork">
+                    
+                    
+                </section>
+                <h3 id="hardworking">Hardworking</h3>
+                <section id="Hardworking">
+                    
+                </section>
+            </section>
+
+        <h2 id="contacts">CONTACTS</h2>
+            <h2 id="cform"></h2>
+                <section id="cforming">
+                    
+                <p id="pl"> Contact</p>
+                <div class="stats">
+                    <ul>
+                        <li>Contact Number: 09566994802 <br>
+                        Email Address: stephenjoshperalta@gmail.com</li>
+                    </ul>
+                </div>
+            </section>
+    </main>
+ 
+    <footer>
+        <h2 ID="ACC">SOCIAL MEDIA ACCOUNTS                  </h2>
+        <ul id="links">
+            <li><a href="https://www.instagram.com/itsnottepennnn?igsh=MWVzbmJtNmp4Nm8waA==">INSTAGRAM</a></li>
+             
+             <li><a href="https://www.facebook.com/profile.php?id=100009036706767&mibextid=ZbWKwL">FACEBOOK</a></li>
+        </ul>
+        <nav><h2><a href="#top" ID="btn">More About Me?</a></h2></nav>
+        <p id="tittle">Stephen Josh Peralta &copy; Resume</p>
+       
+    </footer>
+    </div>
+    <div class="divAboutUs2 bg-info">
+      <style>
+       h1{
+         text-align: center;
+         color:white;
+         
+        
+        }
+        h2{
+            color:white;
+        }
+        .name{
+            font-weight:bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .letter{
+            text-align:center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight:lighter;
+            color:white;
+        
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight:lighter;
+            color:wheat;
+        }
+        li{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight:bold;
+            color:white;
+        
+        }
+        dl{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight:bold;
+            color:white;
+            text-align: center;
+        }
+        .button{
+            
+            background-image:url(IMG_20240312_122641.jpg);
+            padding-left:150px;
+            padding-right:90px;
+            padding-top:90px;
+            padding-bottom:150px;
+            border-radius:360px;
+            border-color:inherit;
+            margin-left:40%;
+            opacity:100%;
+            border-color:rgb(137, 75, 158) ;
+        }
+        .button:hover{
+            cursor: pointer;
+            opacity:50%;
+        
+        }
+        .course{
+            text-align:center;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight:bolder;
+            font-size:150%;
+            color:rgb(64, 0, 85);
+        }
+        
+        
+        .div-head{
+            display: grid;
+            grid-template-columns:50% 50% 50%;
+            grid-template-rows:auto;
+            
+        }
+        .p-info{
+            grid-template-columns:50% 50%;
+            
+            font-weight: bold;
+            font-family:Arial, Helvetica, sans-serif;
+            color:black;
+        
+        }
+        .p1{
+            text-align: center;
+            font-weight:bold;
+            color:rgb(64, 0, 85);
+        }
+        .dream{
+            text-align: center;
+            font-weight: bold;
+            font-family:Arial, Helvetica, sans-serif;
+            color:black;
+        }
+        .d1{
+            text-align: center;
+            font-weight:bold;
+            color:rgb(64, 0, 85);
+        }
+        .day{
+            float:left;
+            margin-right:30%;   
+        }
+        .dream{
+            float:right;
+            margin:20px;
+        }
+        .PIN{
+            float:left;
+            margin-right:10.2%;
+        }
+        .pl{
+            
+            margin-right: 80%;
+        }
+        .c-info{
+            margin-right:80%;
+        }
+        .Tn{
+        float:left;
+        margin-left:5%;
+        }
+        .fb{
+            float:left;
+            margin-left:2%;
+            }
+        .x{
+            float:left;
+            margin-left:2%;
+        }
+        .contact{
+            color:rgb(255, 255, 255);
+        } 
+        .all{
+        background-color: rgb(170, 122, 215);
+        }
+            </style>
+            <div class="all">
+            <h1>
+                My resumei
+            </h1>
+             <button class="button"></button>
+             <p class="course">Bachelor of Science in Computer Science</p>
+            <p class="letter">Hello Mr.Mrs.Ms. Employer I am looking for a position in part of your company and I would like to be a junior programmer. And would also like to expand my knowledge in this kind of workplace as I enter the real world coding scenario's I would be happy to be part of your company, and would love to contribute in creating a different wolrd experience for your targeted customers.</p>
+            <div class="div-head">
+                <div class="p-info">
+                    <p class="p1">Personal Informations</p>
+                    <div class="main-div">
+                        <ul>
+                             <div class="day">
+                                <li>Birthdate
+                                  <p>January,19,2004</p>
+                                </li>
+                            </div>
+                            <div class="ad">
+                                <li>Address
+                                  <p>Casilagan Sta. Cruz Ilocos Sur</p>
+                                </li>
+                            </div>
+                            <div class="PIN">
+                                 <li>Philippine Identification Number
+                                  <p>2640-8256-3480-5197</p>
+                                 </li>
+                            </div>
+                            <div class="exp">
+                                 <li>Work Experience
+                                  <p>none</p>
+                                 </li>
+                            </div>
+                            <div class="pl">
+                                 <li>Programming Languages
+                                  <p>HTML<br>Java<br>JS<br>Css</br></p>
+                                 </li>
+                            </div>
+                        
+                           
+                                <li class="c-info">
+                                  Contact Info.
+                                </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="dream">
+                    <p class="d1">Dream Jobs</p>
+                    <ul>
+                        <dl>Back-end Developer</dl>
+                        <dl>Software Analyst</dl>
+                        <dl>Web Designer</dl>
+                        <dl>Software Engineer</dl>
+        
+                    </ul>
+                </div>
+                  
+            </div>
+            
+        
+            
+                   <div class="Tn"> 
+                       <p class="contact"><strong>Telephone No.</strong> <p>09706644402</p></p> 
+                   </div>
+                    <div class="fb">
+                        <p class="contact"><strong>Facebook acc.</strong> <p>Joebert D. Tababan</p></p>
+                    </div>
+                    <div class="x">
+                        <p class="contact"><strong>X</strong> <p>@j_bertoe</p></p>
+                    </div>
+                    
+    </div>
+    <div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
