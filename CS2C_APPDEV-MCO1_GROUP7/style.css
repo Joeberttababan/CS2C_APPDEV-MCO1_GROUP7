@@ -204,3 +204,7 @@ input{
   background-size: cover;
   background-repeat:no-repeat;
 }
+.profile-picture{
+width:20px;
+height:20px;
+}
